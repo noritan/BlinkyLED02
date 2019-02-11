@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component_data>
+  <File wkspFile="cy8c6xx7_cm4_dual.ld" installFile="psoc6sw-1.0\components\psoc6pdl\devices\psoc6\linker\gcc\cy8c6xx7_cm4_dual.ld" checksum="AE879FF2ACDB66E9AE612850FB5D9F33A5DF6BDF"/>
+  <File wkspFile="psoc6sw-1.0\components\psoc6pdl\devices\psoc6\startup\gcc\startup_psoc6_01_cm4.S" installFile="psoc6sw-1.0\components\psoc6pdl\devices\psoc6\startup\gcc\startup_psoc6_01_cm4.S" checksum="AC02F546913FD8D57EA99E92646CD5B15304EB7A"/>
+  <File wkspFile="setup_readme.txt" installFile="setup_readme.txt" checksum="EF56E62FAD0785F5FCA9B395875139D688ADEA1A"/>
+  <File wkspFile="psoc6sw-1.0\components\psoc6pdl\devices\psoc6\startup\system_psoc6_cm4.c" installFile="psoc6sw-1.0\components\psoc6pdl\devices\psoc6\startup\system_psoc6_cm4.c" checksum="A738305655CCD8DB312D74CDBD3EE9BCE01B8376"/>
+  <File wkspFile="Source\main.c" installFile="Source\main.c" checksum="3910648AD32DA757371DB207CF4A08AE28E14DB0"/>
+  <artifact name="mainapp"/>
+</component_data>
