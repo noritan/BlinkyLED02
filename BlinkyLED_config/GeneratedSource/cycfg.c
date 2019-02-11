@@ -17,6 +17,8 @@
 
 void init_cycfg_all()
 {
+	init_cycfg_clocks();
+	init_cycfg_peripherals();
 	init_cycfg_pins();
 	init_cycfg_platform();
 	init_cycfg_connectivity();

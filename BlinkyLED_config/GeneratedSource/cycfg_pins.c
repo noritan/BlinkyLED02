@@ -15,6 +15,22 @@
 
 #include "cycfg_pins.h"
 
+const cy_stc_gpio_pin_config_t Pin_LEDR_config = 
+{
+	.outVal = 1,
+	.driveMode = CY_GPIO_DM_STRONG_IN_OFF,
+	.hsiom = Pin_LEDR_HSIOM,
+	.intEdge = CY_GPIO_INTR_DISABLE,
+	.intMask = 0UL,
+	.vtrip = CY_GPIO_VTRIP_CMOS,
+	.slewRate = CY_GPIO_SLEW_FAST,
+	.driveSel = CY_GPIO_DRIVE_FULL,
+	.vregEn = 0UL,
+	.ibufMode = 0UL,
+	.vtripSel = 0UL,
+	.vrefSel = 0UL,
+	.vohSel = 0UL,
+};
 const cy_stc_gpio_pin_config_t SWO_config = 
 {
 	.outVal = 1,
@@ -67,6 +83,8 @@ const cy_stc_gpio_pin_config_t SWCLK_config =
 
 void init_cycfg_pins(void)
 {
+	Cy_GPIO_Pin_Init(Pin_LEDR_PORT, Pin_LEDR_PIN, &Pin_LEDR_config);
+
 	Cy_GPIO_Pin_Init(SWO_PORT, SWO_PIN, &SWO_config);
 
 	Cy_GPIO_Pin_Init(SWDIO_PORT, SWDIO_PIN, &SWDIO_config);

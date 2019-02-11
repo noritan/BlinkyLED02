@@ -23,6 +23,7 @@ extern "C" {
 #include "cycfg_notices.h"
 void init_cycfg_connectivity(void);
 
+#define ioss_0_port_6_pin_3_HSIOM P6_3_TCPWM0_LINE_COMPL1
 #define ioss_0_port_6_pin_4_HSIOM P6_4_CPUSS_SWJ_SWO_TDO
 #define ioss_0_port_6_pin_6_HSIOM P6_6_CPUSS_SWJ_SWDIO_TMS
 #define ioss_0_port_6_pin_7_HSIOM P6_7_CPUSS_SWJ_SWCLK_TCLK

@@ -24,6 +24,16 @@
 extern "C" {
 #endif
 
+#define Pin_LEDR_PORT GPIO_PRT6
+#define Pin_LEDR_PIN 3U
+#define Pin_LEDR_NUM 3U
+#define Pin_LEDR_DRIVEMODE CY_GPIO_DM_STRONG_IN_OFF
+#define Pin_LEDR_INIT_DRIVESTATE 1
+#ifndef ioss_0_port_6_pin_3_HSIOM
+	#define ioss_0_port_6_pin_3_HSIOM HSIOM_SEL_GPIO
+#endif
+#define Pin_LEDR_HSIOM ioss_0_port_6_pin_3_HSIOM
+#define Pin_LEDR_IRQ ioss_interrupts_gpio_6_IRQn
 #define SWO_PORT GPIO_PRT6
 #define SWO_PIN 4U
 #define SWO_NUM 4U
@@ -55,6 +65,7 @@ extern "C" {
 #define SWCLK_HSIOM ioss_0_port_6_pin_7_HSIOM
 #define SWCLK_IRQ ioss_interrupts_gpio_6_IRQn
 
+extern const cy_stc_gpio_pin_config_t Pin_LEDR_config;
 extern const cy_stc_gpio_pin_config_t SWO_config;
 extern const cy_stc_gpio_pin_config_t SWDIO_config;
 extern const cy_stc_gpio_pin_config_t SWCLK_config;
