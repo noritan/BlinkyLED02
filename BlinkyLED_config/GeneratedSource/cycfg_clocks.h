@@ -23,8 +23,8 @@
 extern "C" {
 #endif
 
-#define Clock_1MHz_HW CY_SYSCLK_DIV_8_BIT
-#define Clock_1MHz_NUM 0U
+#define Clock_500kHz_HW CY_SYSCLK_DIV_8_BIT
+#define Clock_500kHz_NUM 0U
 
 void init_cycfg_clocks(void);
 

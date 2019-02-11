@@ -12,8 +12,8 @@
   <ConfiguratorData/>
   <BlockConfig>
     <Clocks>
-      <Block location="peri[0].div_8[0]" alias="Clock_1MHz" template="mxs40peripheralclock" version="1.0">
-        <Param id="intDivider" value="72"/>
+      <Block location="peri[0].div_8[0]" alias="Clock_500kHz" template="mxs40peripheralclock" version="1.0">
+        <Param id="intDivider" value="144"/>
         <Param id="fracDivider" value="0"/>
         <Param id="startOnReset" value="true"/>
       </Block>
@@ -26,10 +26,10 @@
         <Param id="RunMode" value="CY_TCPWM_PWM_CONTINUOUS"/>
         <Param id="DeadClocks" value="0"/>
         <Param id="EnablePeriodSwap" value="false"/>
-        <Param id="Period0" value="500000"/>
+        <Param id="Period0" value="250000"/>
         <Param id="Period1" value="32768"/>
         <Param id="EnableCompareSwap" value="false"/>
-        <Param id="Compare0" value="250000"/>
+        <Param id="Compare0" value="125000"/>
         <Param id="Compare1" value="16384"/>
         <Param id="InterruptSource" value="CY_TCPWM_INT_NONE"/>
         <Param id="CountInput" value="CY_TCPWM_INPUT_DISABLED"/>
